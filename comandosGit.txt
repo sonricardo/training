@@ -1,2 +1,11 @@
 git init: convierte a la carpeta donde se invoque el comando en un archivo "giteable"
+git add [carpeta] : actualiza las modificaciones, prepara el terreno para el commit
+git commit -m "[mensaje]" : creas un nuevo commit (una version)
+git rm --cached [archivo] : borra el tracking que hizo add
+git log [archivo] :  enlista todas los commits hechos
+git show [archivo] : muestra a detalle el commit, que partes del archivo cambiaron y en donde
+git diff [commit vieji][commit reciente] : muestra las diferencias de un commit a otro
 
+git config --list : muestra tus configuraciones
+git config --global user.name [name] : para setear tu nombre para que a ese nombre queden lo cambios
+git config --global user.email [email]: setea tu email

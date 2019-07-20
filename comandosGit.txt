@@ -1,0 +1,2 @@
+git init: convierte a la carpeta donde se invoque el comando en un archivo "giteable"
+

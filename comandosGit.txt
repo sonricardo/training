@@ -1,13 +1,23 @@
 git init: convierte a la carpeta donde se invoque el comando en un archivo "giteable"
 git add [carpeta] : actualiza las modificaciones, prepara el terreno para el commit
 git commit -m "[mensaje]" : creas un nuevo commit (una version)
+git commit -am  "[hace un add . + commit]"
 git rm --cached [archivo] : borra el tracking que hizo add
 git log [archivo] :  enlista todas los commits hechos
+git log --stat : te muestra los commits con los bytes que cambiaron en cada archivo en cada commit
 git show [archivo] : muestra a detalle el commit, que partes del archivo cambiaron y en donde
 git diff [commit vieji][commit reciente] : muestra las diferencias de un commit a otro
 git branch : muestra las ramas del proyecto y en cual esta apuntando head
 git merge [rama] : hace una fusion de commits entre el commit de la rama base (la que apunta el head en el momento de la 
                 instruccion) y el ultimo commit de la rama indicada, quedando solo la rama base con el commit fusionado 
+git diff : diferencia entre lo que esta en staging y lo que esta en disco duro o salvado
+git checkout [commit] [archivo] : trae al stage el archivo seleccionado del commit seleccionado / switchea entre ramas
+git fetch : descarga actualizaciones en el repositorio local (ojo no en el directorio)
+git merge : fusiona el repositorio local con el directorio local
+git clone [url]: clona un repositorio y todo su historial en nuestro computador 
+git branch [nombre de la rama] : copia el repositorio head y crea una nueva rama
+
+
 
 git config --list : muestra tus configuraciones
 git config --global user.name [name] : para setear tu nombre para que a ese nombre queden lo cambios

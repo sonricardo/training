@@ -5,6 +5,9 @@ git rm --cached [archivo] : borra el tracking que hizo add
 git log [archivo] :  enlista todas los commits hechos
 git show [archivo] : muestra a detalle el commit, que partes del archivo cambiaron y en donde
 git diff [commit vieji][commit reciente] : muestra las diferencias de un commit a otro
+git branch : muestra las ramas del proyecto y en cual esta apuntando head
+git merge [rama] : hace una fusion de commits entre el commit de la rama base (la que apunta el head en el momento de la 
+                instruccion) y el ultimo commit de la rama indicada, quedando solo la rama base con el commit fusionado 
 
 git config --list : muestra tus configuraciones
 git config --global user.name [name] : para setear tu nombre para que a ese nombre queden lo cambios

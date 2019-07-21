@@ -30,4 +30,4 @@ git remote -v : las url de las conexiones remotas para fetch y push
 
 git pull [conexion remota] [rama] : hace un fetch y luego un merge en la rama indicada desde un repositorio remoto
 git push [conexion remota] [rama] : crea un commit subiendo los cambios de la rama en el proyecto en hub
-
+git remote set-url [name conexion] [url] : cambiamos el link de conexion

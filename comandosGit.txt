@@ -24,6 +24,7 @@ git config --global user.name [name] : para setear tu nombre para que a ese nomb
 git config --global user.email [email]: setea tu email
 
 
+
 git remote add [name refer hub] [url]: conectas con el proyecto remoto
 git remote: te indica las conexiones remotas
 git remote -v : las url de las conexiones remotas para fetch y push
@@ -31,3 +32,12 @@ git remote -v : las url de las conexiones remotas para fetch y push
 git pull [conexion remota] [rama] : hace un fetch y luego un merge en la rama indicada desde un repositorio remoto
 git push [conexion remota] [rama] : crea un commit subiendo los cambios de la rama en el proyecto en hub
 git remote set-url [name conexion] [url] : cambiamos el link de conexion
+
+git tag -a [version] -m [mensaje] [id del commit]: asigna un tag al commit 
+git tag : muestra los tags
+git show-ref --tags: muestra los commits con tag
+
+git push [conexion] --tags: subes los tags a la direccion remota
+git tag -d [nombre del tag]: elimina el tag de manera local
+git push [conexion] :refs/tags/[nombre del tag] : borras el tag del repo remoto
+ 
